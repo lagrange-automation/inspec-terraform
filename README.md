@@ -2,6 +2,17 @@
 
 InSpec resources for interacting with Terraform outputs.
 
+## Usage
+
+```yaml
+name: my-profile
+title: My profile that tests terraform outputs
+version: 0.1.0
+inspec_version: '>= 2.2.10'
+  - name: inspec-terraform-outputs
+    git: https://github.com/lagrange-automation/inspec-terraform-outputs
+```
+
 ## Examples
 
 ### Look up terraform outputs in the current directory

@@ -35,7 +35,27 @@ describe terraform_outputs(dir: "/opt/terraform/state") do
 end
 ```
 
-### use terraform outputs in multiple controls
+### Look up terraform outputs in a non-root module
+
+```
+$ terraform output -state dev-inspec-gcp
+dev_host_project_id = dev-host-7e99
+dev_host_project_number = 150809430813
+dev_inspec_gcp_project_id = dev-inspec-gcp-94f7
+dev_inspec_gcp_project_number = 584678632542
+dev_service_msa_project_id = dev-service-msa-eef5
+dev_service_msa_project_number = 343255259805
+dev_simple_service_msa_project_id = dev-simple-service-msa-74ff
+dev_simple_service_msa_project_number = 870097726498
+```
+
+```ruby
+describe terraform_outputs(mod: "dev-inspec-gcp") do
+  its('dev_host_project_id') { should eq "dev-host-7e99" }
+end
+```
+
+### Use terraform outputs in multiple controls
 
 ```ruby
 outputs = terraform_outputs()

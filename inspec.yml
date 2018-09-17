@@ -1,0 +1,8 @@
+name: inspec-terraform-outputs
+title: InSpec Terraform Outputs
+maintainer: Adrien Thebo <adrien@lagrange-automation.io>
+copyright: 2018 Lagrange Automation LLC
+copyright_email: you@example.com
+license: Apache-2.0
+summary: Terraform output resources
+version: 0.1.0

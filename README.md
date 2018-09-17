@@ -57,6 +57,17 @@ end
 
 ### Use terraform outputs in multiple controls
 
+```
+$ terraform output
+app_engine_enabled = false
+domain =
+group_email =
+project_bucket_self_link = []
+project_bucket_url = []
+project_id = dev-simple-service-msa-74ff
+project_number = 870097726498
+```
+
 ```ruby
 outputs = terraform_outputs()
 

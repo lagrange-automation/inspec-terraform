@@ -29,7 +29,7 @@ class TerraformOutputs < Inspec.resource(1)
     if exist? && @outputs.key?(key)
       @outputs[key]["value"]
     else
-      super
+      nil
     end
   end
 

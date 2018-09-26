@@ -14,6 +14,10 @@ class TerraformOutputs < Inspec.resource(1)
   #                    of the root module.
   attr_reader :mod
 
+  # @!attribute [r] outputs
+  #   @return [String] The a Hash containing all Terraform outputs.
+  attr_reader :outputs
+
   def initialize(dir: Dir.getwd(), mod: nil)
     @dir = dir
     @mod = mod

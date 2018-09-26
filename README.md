@@ -1,6 +1,6 @@
-# Inspec Terraform outputs
+# Inspec Terraform
 
-InSpec resources for interacting with Terraform outputs.
+InSpec resources for interacting with Terraform.
 
 ## Usage
 
@@ -9,8 +9,9 @@ name: my-profile
 title: My profile that tests terraform outputs
 version: 0.1.0
 inspec_version: '>= 2.2.10'
+depends:
   - name: inspec-terraform-outputs
-    git: https://github.com/lagrange-automation/inspec-terraform-outputs
+    git: https://github.com/lagrange-automation/inspec-terraform
 ```
 
 ## Examples

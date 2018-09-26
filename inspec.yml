@@ -1,5 +1,5 @@
-name: inspec-terraform-outputs
-title: InSpec Terraform Outputs
+name: inspec-terraform
+title: InSpec Terraform
 maintainer: Adrien Thebo <adrien@lagrange-automation.io>
 copyright: 2018 Lagrange Automation LLC
 copyright_email: you@example.com
